@@ -26,6 +26,7 @@ public class ScrollingActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        // branch release_v2_0_6
     }
 
     @Override
