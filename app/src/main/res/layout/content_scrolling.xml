@@ -8,10 +8,105 @@
     tools:context="com.test.gittest.ScrollingActivity"
     tools:showIn="@layout/activity_scrolling">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+        android:orientation="vertical">
+
+        <com.sdsmdg.harjot.longshadows.LongShadowsWrapper
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#F5362C"
+            android:visibility="gone">
+
+            <com.sdsmdg.harjot.longshadows.LongShadowsImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_launcher_round"
+                app:shadow_angle="45"
+                app:shadow_blur_enabled="true"
+                app:shadow_blur_radius="10"
+                app:shadow_length="90" />
+        </com.sdsmdg.harjot.longshadows.LongShadowsWrapper>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/background_card">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="58dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#00000000"
+                app:cardElevation="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f7f7f7"
+                    android:gravity="center"
+                    android:lineSpacingExtra="3sp"
+                    android:padding="15dp"
+                    android:textColor="#93939b"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:text="아뇨, 모든 세탁물이 완성되면 알려주세요" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#00000000"
+                app:cardElevation="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f7f7f7"
+                    android:gravity="center"
+                    android:lineSpacingExtra="3sp"
+                    android:padding="15dp"
+                    android:textColor="#93939b"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:text="아뇨, 모든 세탁물이 완성되면 알려주세요" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#00000000"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="13dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_round"
+                android:visibility="visible" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/large_text" />
+    </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

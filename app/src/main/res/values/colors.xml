@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!-- card colors -->
+    <color name="card_background">@android:color/darker_gray</color>
+    <color name="card_shadow_1">@android:color/holo_red_dark</color>
+    <color name="card_shadow_2">@android:color/holo_blue_dark</color>
+    <color name="transparent">#00000000</color>
 </resources>
